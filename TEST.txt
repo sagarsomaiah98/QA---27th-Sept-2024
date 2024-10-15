@@ -1,3 +1,2 @@
-JAVA IS A PROGRAMMING LANGUAGE
-SELENIUM IS A AUTOMATION TOOL
-SELENIUM SUPPORTS MULTIPLE PLATFORMS
+testng is automation framework
+cucumber is famous framework
