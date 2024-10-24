@@ -19,7 +19,7 @@ public class Operators {
 	System.out.println(p-c);
 	System.out.println(p*c);
 	System.out.println(p/c);
-	System.out.println(p%c);
+	System.out.println(p%c);//reminder
 	}
 
 }
