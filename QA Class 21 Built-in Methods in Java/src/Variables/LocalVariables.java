@@ -8,8 +8,6 @@ public class LocalVariables {
 		
 		char grade='A';
 		double salary=345.62;
-		int age=21;
-		String name="Kash";
 		System.out.println(grade);
 		System.out.println(salary);
 		System.out.println(age);
