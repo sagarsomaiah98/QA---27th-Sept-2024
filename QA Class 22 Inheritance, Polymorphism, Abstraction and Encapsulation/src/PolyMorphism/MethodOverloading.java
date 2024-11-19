@@ -1,14 +1,10 @@
 package PolyMorphism;
-
-public class MethodOverloading {
-	
+public class MethodOverloading {	
 	//same method name but different argument/parameters
-	
 	public void add() {
 		
 		System.out.println("addition method without input");
 	}
-	
 	public void add(int a) {
 		System.out.println("addition with one input");	
 	}
@@ -29,10 +25,7 @@ public class MethodOverloading {
 	System.out.println("addition with two char input");
 	}
 	
-	
-	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
  MethodOverloading m= new MethodOverloading();
  m.add(30);
  m.add(23.6);

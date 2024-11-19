@@ -1,0 +1,9 @@
+Interface: Methods without body or without implementation
+to call the methods use implements in another class
+
+Class: Methods with body or with implementation
+create a object in same class
+
+Abstract: Methods with body and methods without body(combination of implemented and
+ unimplemented methods
+ to call the methods use extends(parent-child relation) in another class

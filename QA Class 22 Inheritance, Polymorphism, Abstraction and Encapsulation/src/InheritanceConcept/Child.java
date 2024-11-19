@@ -11,11 +11,15 @@ public class Child extends Parent {
 	public static void main(String[] args) {
 		
 		Child c = new Child();
-		c.car();
-		c.house();
+		//owned by parent inherited by child
+		
 		c.factory();
+		c.house();
 		System.out.println(c.lname);
 		System.out.println(c.grade);
+		
+		//owned by child
+		c.car();
 		
 	}
 

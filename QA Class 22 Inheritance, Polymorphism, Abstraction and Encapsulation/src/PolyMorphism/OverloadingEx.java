@@ -2,6 +2,8 @@ package PolyMorphism;
 
 public class OverloadingEx {
 	
+	//same method name but different argument
+	
 	public void info() {
 		System.out.println("calling info");
 	}
