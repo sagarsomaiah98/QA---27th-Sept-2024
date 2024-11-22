@@ -1,7 +1,10 @@
 package ListConcept;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+
+
 
 public class LL {
 
@@ -23,10 +26,21 @@ public class LL {
 		
 		
 		for(int i=0;i<stud.size();i++) {
-			System.out.println(stud.get(i));
+			//System.out.println(stud.get(i));
 		}
 		
-		
+	Iterator<String> it= stud.iterator();	
+	System.out.println(it.next());
+	System.out.println(it.hasNext());
+	System.out.println(it.next());
+	System.out.println(it.hasNext());
+	System.out.println(it.next());
+	System.out.println(it.hasNext());
+	System.out.println(it.next());
+	System.out.println(it.hasNext());
+	System.out.println(it.next());
+	System.out.println(it.hasNext());
+	
 		
 }
 }
