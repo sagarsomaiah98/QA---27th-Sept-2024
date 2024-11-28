@@ -21,11 +21,17 @@ public class Double_Click {
 		driver.get("https://demoqa.com/buttons");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//button[text()='Click Me']")).click();
+		//driver.findElement(By.xpath("//button[text()='Click Me']")).click();
 
+		WebElement rightButton=driver.findElement(By.xpath("//button[@id='rightClickBtn']"));
 		
-		
+	Actions action = new Actions(driver);
+	Thread.sleep(2000);
+	action.contextClick(rightButton).build().perform();
 	
+	WebElement dblButton=driver.findElement(By.xpath("//button[@id='doubleClickBtn']"));
+	Thread.sleep(2000);
+	action.doubleClick(dblButton).build().perform();
 		
 		
 		
