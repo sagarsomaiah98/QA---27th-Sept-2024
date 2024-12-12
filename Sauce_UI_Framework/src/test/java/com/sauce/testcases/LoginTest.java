@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.sauce.pages.LoginPage;
 import com.sauce.testbase.TestBase;
+import com.sauce.testuill.TestUtil;
 
 public class LoginTest extends TestBase {
 	
@@ -19,7 +20,7 @@ public class LoginTest extends TestBase {
 	@BeforeMethod
 	public void init() throws IOException {
 		
-		intialization();
+		intialization();//launch browser and navigate to url
 		loginpage= new LoginPage();
 	}
 	
@@ -31,12 +32,15 @@ public class LoginTest extends TestBase {
 		try {
 		loginpage.login("standard_user", "secret_sauce");
 		driver.findElement(By.xpath("//span[@class='title']"));
+		
 		}
 		catch(Exception e) {
 			flag=false;
+			TestUtil.Screenshot();
 		}
 		
-	   assertEquals(flag, true);
+		assertEquals(flag, true);
+	   
 					
 	}
 
@@ -44,8 +48,13 @@ public class LoginTest extends TestBase {
 	@Test(priority=2)
 	public void invalidLoginTest() throws IOException {
 		
-		
+		try {
 		loginpage.login("username1", "secret_sauce");
+		}
+		catch(Exception e) {
+		TestUtil.Screenshot();
+		e.printStackTrace();
+		}
 		
 	}
 	

@@ -42,7 +42,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.get(url);
 	   int timeout=Integer.parseInt(prop.getProperty("timeout"));
-	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
+	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
 	}
 
 	public static void main(String[] args) {
